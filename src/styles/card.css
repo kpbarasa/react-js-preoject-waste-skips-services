@@ -1,0 +1,84 @@
+
+.card{
+    @apply overflow-hidden flex flex-col gap-3 relative rounded-lg  bg-background_primary outline-4 border p-0 md:p-0 transition-all border-secondary/15  text-white hover:border-light/15 hover:bg-background_secondary hover:shadow-xl hover:cursor-pointer;
+}
+
+.card.active{
+    @apply border-primary bg-[#0037C1]/10;
+}
+
+.card-header {
+    @apply relative;
+}
+
+/* base overlay container */
+.card-header-overlay {
+  @apply absolute top-0 left-0 opacity-0 bg-black/30 flex flex-row justify-center items-center gap-2 w-full h-full ;
+}
+
+/* on hover: fade in */
+.card:hover .card-header-overlay {
+  @apply opacity-100;
+}
+
+/* individual button animation */
+.card-header-overlay .card-btn {
+  @apply transform translate-y-4 opacity-0 ;
+}
+
+/* animate buttons sliding up on hover */
+.card:hover .card-header-overlay .card-btn {
+  @apply translate-y-0 opacity-100;
+}
+
+.card-location {
+    @apply absolute top-3 right-3 z-20;
+}
+
+.card-checked {
+    @apply absolute top-3 left-3 z-20;
+}
+
+.card-location, .card-checked {
+    @apply flex justify-start items-center gap-1 border-2 border-dark bg-dark text-light px-2 py-1 rounded-lg text-xs font-medium shadow-md;
+}
+
+.card-checked.active{
+    @apply bg-primary border-primary text-light;
+}
+.card .card-footer {
+    @apply p-2;
+}
+
+.card .card-body{
+    @apply px-0 mb-8 h-[10em];
+}
+
+
+.card .card-footer {
+    @apply flex justify-center items-center gap-2;
+}
+
+.card-body .card-price {
+    @apply pb-1 px-1 flex flex-col items-center text-light rounded-lg border-2 border-[#ffffff]/0 hover:border-dark hover:bg-light hover:shadow hover:text-dark;
+}
+
+.card-body .card-price:hover > .card-price-text {
+    @apply text-dark;
+}
+
+.card-price-info {
+    @apply flex justify-center gap-2 items-center text-[0.8rem] md:text-sm lg:text-sm xl:text-lg py-1 px-1.5 font-bold   
+}
+
+.card-price-text{
+    @apply text-xs text-secondary font-light capitalize;
+}
+
+.card-title {
+    @apply text-center md:text-xl font-semibold text-light
+}
+
+.card-description {
+    @apply text-sm text-center font-light text-secondary md:my-2
+}

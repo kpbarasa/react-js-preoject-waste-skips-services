@@ -1,0 +1,58 @@
+.card-btn {
+    @apply text-sm  w-auto py-4 md:py-3 px-4 rounded-md transition-all flex items-center justify-center space-x-2 bg-dark border-2 border-dark text-white hover:bg-[#0037C1] hover:border-[#0037C1];
+}
+.card-btn.active {
+    @apply bg-[#0037C1] text-white hover:bg-[#002da1];
+}
+
+.btn {
+    @apply flex justify-center items-center gap-1 rounded-md capitalize;
+}
+
+.btn-primary {
+  @apply bg-primary text-white border-primary hover:bg-primary/20 hover:border-primary/20;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-black border-secondary hover:bg-gray-300;
+}
+
+.btn-success {
+  @apply bg-success text-white border-success hover:bg-green-700;
+}
+
+.btn-warning {
+  @apply bg-warning text-white border-warning hover:bg-orange-500;
+}
+
+.btn-danger {
+  @apply bg-error text-white border-error hover:bg-red-600;
+}
+
+.btn-info {
+  @apply bg-info text-white border-info hover:bg-blue-800;
+}
+
+.btn-outline-primary {
+  @apply bg-transparent text-primary border-primary hover:bg-primary hover:text-white;
+}
+
+.btn-outline-secondary {
+  @apply bg-transparent text-secondary border-secondary hover:bg-secondary hover:text-black;
+}
+
+.btn-link {
+  @apply bg-transparent border-0 text-primary underline hover:text-blue-700 p-0;
+}
+
+.btn-sm {
+  @apply text-xs py-1.5 px-3;
+}
+
+.btn-md {
+  @apply text-sm py-2 px-4;
+}
+
+.btn-lg {
+  @apply text-base py-3 px-5;
+}

@@ -1,0 +1,51 @@
+.wizard-nav-container{
+    @apply px-4 py-6 flex flex-col gap-6 justify-center items-center w-full shadow-lg border-b-2 border-secondary/5 bg-background_secondary;
+}
+
+.wizard-nav{
+    @apply flex flex-row md:justify-start lg:justify-start xl:justify-center xs:items-start sm:items-start md:items-start lg:items-start xl:items-center gap-0 text-light;
+}
+
+.nav-item-container{
+    @apply flex justify-center items-center;
+}
+
+.nav-item {
+    @apply text-xs md:text-sm lg:text-base mx-1 md:mx-0 lg:mx-0 flex justify-start items-center gap-2 py-2 px-4 border-2 border-light/0 rounded-lg hover:bg-background_primary hover:text-light hover:border-light/10 hover:cursor-pointer;
+}
+
+.nav-item.active {
+    @apply  text-light border-primary outline-2 outline-primary cursor-pointer;
+}
+
+.nav-item .nav-text {
+    @apply capitalize hidden md:hidden lg:hidden xl:flex;
+}
+
+.nav-item .nav-num {
+    @apply capitalize sm:flex md:flex lg:flex xl:hidden font-bold;
+}
+
+.nav-item .nav-icon {
+    @apply  hidden md:hidden lg:hidden xl:flex;
+}
+
+.nav-item-container .nav-divider {
+    @apply xs:hidden sm:flex sm:w-8 md:w-16  w-16 h-px bg-[#0037C1];
+}
+
+.nav-item .nav-divider:last-child {
+    @apply w-16 h-px bg-[#0037C1];
+}
+
+.nav-item .active {
+    @apply bg-light text-dark;
+}
+
+.nav-item:hover .nav-icon  {
+    @apply text-primary;
+}
+
+.nav-item.active > .nav-icon  {
+    @apply text-primary;
+}

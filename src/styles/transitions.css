@@ -1,0 +1,16 @@
+.btn, .card-btn, .card-header-overlay{
+    @apply transition-all duration-300 ease-in-out
+}
+
+.card{
+    @apply transition-all duration-75 ease-in-out;
+}
+
+.card-header-overlay, .card-price{
+    @apply transition-all duration-300 ease-in-out;
+}
+
+.collapse {
+    @apply transition-all duration-300 ease-in-out;
+}
+

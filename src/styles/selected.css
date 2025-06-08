@@ -1,0 +1,19 @@
+.selected {
+    @apply fixed bottom-0 left-0 right-0 shadow-lg border-b-2 border-secondary/15 bg-background_secondary border-t border-[#2A2A2A] p-4 z-50;
+}
+
+.selected .card-price {
+    @apply pb-1 px-1 flex flex-col items-center text-light  hover:text-primary;
+}
+
+.selected .card-price:hover .card-price-text {
+    @apply text-secondary;
+}
+
+.selected .card-price-info {
+    @apply flex justify-center gap-2 items-center sm:text-sm md:text-sm lg:text-sm xl:text-lg py-1 px-1.5 font-bold   
+}
+
+.selected .card-price-text{
+    @apply text-xs text-secondary font-semibold capitalize;
+}
