@@ -35,7 +35,7 @@ export default function CardBody({skip}) {
           <div className="flex flex-col items-center gap-0">
             <span className="card-price">
               <div className="card-price-info">
-              <TbTruckDelivery /> <span> {`£ ${skip.price_before_vat}`}</span>
+              <TbTaxPound /> <span> {`£ ${skip.price_before_vat}`}</span>
               </div>
               <small className="card-price-text">before vat</small>
             </span>
@@ -57,7 +57,7 @@ export default function CardBody({skip}) {
           <div className="flex flex-col items-center">
             <span className="card-price">
               <div className="card-price-info">
-              <TbTaxPound  /> <span> {`£ ${skip.transport_cost}`}</span>
+              <TbTruckDelivery  /> <span> {`£ ${skip.transport_cost}`}</span>
               </div>
               <small className="card-price-text">transport</small>
             </span>
