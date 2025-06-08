@@ -100,7 +100,17 @@ Conditional animations when selected is truthy.
 
 Rebuild the layout by breaking it into well-scoped components.
 
-Introduce subcomponents for collapsible areas, nav items, ca
+Introduce subcomponents for collapsible areas, nav items, cards.
+
+Preserve functionality while enhancing interactivity.
+
+Improve maintainability with a flat, organized file structure.
+
+Refactor styles into modular, themeable Tailwind-based utility files.
+
+Introduce animation hooks for visual clarity and smoothness.
+
+Iterate on card design to provide more useful info to users.
 
 ## 📦 Dependencies
 Make sure the following libraries are installed:
