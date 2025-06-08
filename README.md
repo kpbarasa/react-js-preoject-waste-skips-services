@@ -67,6 +67,41 @@ src/
     ├── styles.jsx
     └── transitions.css
 
+
+## Key Strategies
+
+Break large UI blocks into logical, encapsulated components.
+
+Apply Tailwind for styling with custom utility overrides when needed.
+
+Apply animations (slide/fade) using CSS keyframes.
+
+Make card components more informative and interactive.
+
+Use conditional rendering with animations for smoother UI transitions.
+
+Example: NavMenu
+
+Fixed when scrolling past threshold.
+
+Uses fade-in-down animation triggered by isFixed state.
+
+Highlights active step.
+
+Example: SkipSelectComponent
+
+Collapsible info panel on mobile.
+
+Expanded info panel on larger screens.
+
+Conditional animations when selected is truthy.
+
+## Process
+
+Rebuild the layout by breaking it into well-scoped components.
+
+Introduce subcomponents for collapsible areas, nav items, ca
+
 ## 📦 Dependencies
 Make sure the following libraries are installed:
 
