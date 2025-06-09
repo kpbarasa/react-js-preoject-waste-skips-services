@@ -36,11 +36,11 @@
 }
 
 .card-checked {
-    @apply absolute top-3 left-3 z-20;
+    @apply absolute top-3 left-3 z-20 py-6;
 }
 
 .card-location, .card-checked {
-    @apply flex justify-start items-center gap-1 border-2 border-dark bg-dark text-light px-2 py-1 rounded-lg text-xs font-medium shadow-md;
+    @apply flex justify-start items-center gap-1 border-2 border-dark bg-dark text-light px-2 py-1 h-7 rounded-lg text-xs font-medium shadow-md;
 }
 
 .card-checked.active{

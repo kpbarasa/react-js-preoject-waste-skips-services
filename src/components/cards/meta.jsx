@@ -1,5 +1,4 @@
-import { TbMapPin  } from "react-icons/tb";
-import { PiCheckFatFill } from "react-icons/pi";
+import { TbMapPin, TbCheck } from "react-icons/tb";
 
 /**
  * Meta Component
@@ -27,7 +26,7 @@ export default function Meta({skip, checked}) {
     <>
     {checked && 
       <div className={checked ? "card-checked active" : "card-checked"}> 
-        <PiCheckFatFill />
+        <TbCheck  />
       </div>
     }
     <div className="card-location"> 
