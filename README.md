@@ -17,55 +17,54 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## 🗂️ File Structure Overview
-graphql
-Copy
-Edit
-src/
-│
-├── App.js                    # Root component that initializes context & layout
-├── index.js                  # Entry point for ReactDOM rendering
-│
-├── components/               # Reusable UI components
-│   ├── collapse-btn.jsx
-│   ├── main-body.jsx
-│   ├── nav-menu.jsx
-│   ├── cards/                # Card UI components for skips
-│   │   ├── alert.jsx
-│   │   ├── body.jsx
-│   │   ├── container.jsx
-│   │   ├── footer.jsx
-│   │   ├── header.jsx
-│   │   └── index.jsx
-│   └── pages/                # Page layout components
-│       ├── back-to-top-btn.jsx
-│       ├── content.jsx
-│       ├── index.jsx
-│       ├── sub-title.jsx
-│       └── title.jsx
-│
-├── data/
-│   └── api.jsx               # Simulated API data fetching
-│
-├── hooks/
-│   └── context/
-│       └── context_skips_provider.jsx  # React Context provider for skips
-│
-├── pages/
-│   └── service-selection/
-│       ├── service-selection.jsx
-│       └── skips/
-│           ├── index.jsx             # Skip listing with selection logic
-│           └── skips-select.jsx      # Selection confirmation & navigation
-│
-└── styles/                  # Custom stylesheets
-    ├── buttons.css
-    ├── card.css
-    ├── fonts.css
-    ├── layout.css
-    ├── nav_menu.css
-    ├── selected.css
-    ├── styles.jsx
-    └── transitions.css
+        src/
+        ├── App.js                  # Root component that initializes context & layout
+        ├── index.js                # Entry point for ReactDOM rendering
+
+        ├── components/             # Reusable UI components
+        │   ├── collapse-btn.jsx
+        │   ├── main-body.jsx
+        │   ├── nav-menu.jsx
+        │   ├── cards/              # Card UI components for skips
+        │   │   ├── alert.jsx
+        │   │   ├── body.jsx
+        │   │   ├── container.jsx
+        │   │   ├── footer.jsx
+        │   │   ├── header.jsx
+        │   │   └── index.jsx
+
+        ├── pages/                  # Page layout components
+        │   ├── back-to-top-btn.jsx
+        │   ├── content.jsx
+        │   ├── index.jsx
+        │   ├── sub-title.jsx
+        │   └── title.jsx
+
+        ├── data/
+        │   └── api.jsx             # Simulated API data fetching
+
+        ├── hooks/
+
+        ├── context/
+        │   └── context_skips_provider.jsx  # React Context provider for skips
+
+        ├── pages/
+        │   └── service-selection/
+        │       ├── service-selection.jsx
+        │       └── skips/
+        │           ├── index.jsx          # Skip listing with selection logic
+        │           └── skips-select.jsx   # Selection confirmation & navigation
+
+        ├── styles/                 # Custom stylesheets
+        │   ├── buttons.css
+        │   ├── card.css
+        │   ├── fonts.css
+        │   ├── layout.css
+        │   ├── nav_menu.css
+        │   ├── selected.css
+        │   ├── styles.jsx
+        │   └── transitions.css
+
 
 ## Key Strategies
 
