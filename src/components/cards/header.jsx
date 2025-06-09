@@ -27,7 +27,6 @@ export default function CardHeader(props) {
   return (
     <div className="card-header">
       <Meta skip={skip} checked={checked} />
-      {/* <Alert type={alert} /> */}
       <Media className="w-full h-36 md:h-48 object-cover rounded-sm mb-4" type="image" src={media} />
       <div className="card-header-overlay">
         {children}

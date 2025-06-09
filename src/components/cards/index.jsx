@@ -1,7 +1,6 @@
 import CardHeader from "./header";
 import CardBody from "./body";
-import { FaInfo } from "react-icons/fa6";
-import { TbPlus  } from "react-icons/tb";
+import { TbPlus, TbMinus } from "react-icons/tb";
 import Tilt from 'react-parallax-tilt';
 
 /**
@@ -65,9 +64,12 @@ export default function Card({ skip, selected, onSelect }) {
             
             <button
               onClick={onSelect}
-              className={selected ? "card-btn active" : "card-btn"}
+              className={selected ? "btn btn-md card-btn active" : "btn btn-md card-btn"}
             >
-              <TbPlus  />
+              {!selected ?   <TbPlus  /> : <TbMinus    />}
+              <span className="font-bold text-sm">
+                {!selected ?   `add` : `remove`}
+              </span>
             </button>
 
           </CardHeader>
@@ -75,18 +77,6 @@ export default function Card({ skip, selected, onSelect }) {
           <CardBody skip={skip} />
 
           {/* <CardFooter>
-            <button
-              onClick={onSelect}
-              className={selected ? "card-btn active" : "card-btn"}
-            >
-              <TbPlus  />
-            </button>
-
-            <button 
-              className={selected ? "card-btn active" : "card-btn"}
-              >
-              <FaInfo />
-            </button>
           </CardFooter> */}
         </div>
 
