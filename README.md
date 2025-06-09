@@ -111,19 +111,17 @@ Introduce animation hooks for visual clarity and smoothness.
 Iterate on card design to provide more useful info to users.
 
 ## 📦 Dependencies
-Make sure the following libraries are installed:
+    Make sure the following libraries are installed:
 
-bash
-Copy
-Edit
-npm install react react-dom react-icons
-This project may also use:
-
-TailwindCSS (for utility-first styling)
-
-React Icons (e.g., TbTruckDelivery, GiWeight)
-
-React Context API (for global skip state management)
+        * bash
+        * Copy
+        * Edit
+        * npm install react react-dom react-icons
+    
+    This project may also use:
+        * TailwindCSS (for utility-first styling)
+        * React Icons (e.g., TbTruckDelivery, GiWeight)
+        * React Context API (for global skip state management)
 
 
 ## 🧑‍💻 How to Run
