@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+#React waste management services selection
 A responsive React application that allows users to select skip bin services through a multi-step form. It includes features like dynamic skip listings, context-driven data sharing, custom UI components, and mobile-first responsive design.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -66,6 +66,50 @@ src/
     ├── selected.css
     ├── styles.jsx
     └── transitions.css
+
+## Key Strategies
+
+Break large UI blocks into logical, encapsulated components.
+
+Apply Tailwind for styling with custom utility overrides when needed.
+
+Apply animations (slide/fade) using CSS keyframes.
+
+Make card components more informative and interactive.
+
+Use conditional rendering with animations for smoother UI transitions.
+
+Example: NavMenu
+
+Fixed when scrolling past threshold.
+
+Uses fade-in-down animation triggered by isFixed state.
+
+Highlights active step.
+
+Example: SkipSelectComponent
+
+Collapsible info panel on mobile.
+
+Expanded info panel on larger screens.
+
+Conditional animations when selected is truthy.
+
+## Process
+
+Rebuild the layout by breaking it into well-scoped components.
+
+Introduce subcomponents for collapsible areas, nav items, cards.
+
+Preserve functionality while enhancing interactivity.
+
+Improve maintainability with a flat, organized file structure.
+
+Refactor styles into modular, themeable Tailwind-based utility files.
+
+Introduce animation hooks for visual clarity and smoothness.
+
+Iterate on card design to provide more useful info to users.
 
 ## 📦 Dependencies
 Make sure the following libraries are installed:

@@ -34,11 +34,11 @@
 }
 
 .btn-outline-primary {
-  @apply bg-transparent text-primary border-primary hover:bg-primary hover:text-white;
+  @apply bg-transparent text-primary border-primary border-[3px] border-primary/50 hover:bg-primary hover:text-white;
 }
 
 .btn-outline-secondary {
-  @apply bg-transparent text-secondary border-secondary hover:bg-secondary hover:text-black;
+  @apply bg-transparent text-secondary border-[3px] border-secondary/40 hover:bg-secondary hover:text-black hover:shadow-sm;
 }
 
 .btn-link {
@@ -50,9 +50,9 @@
 }
 
 .btn-md {
-  @apply text-sm py-2 px-4;
+  @apply text-base py-2 px-4;
 }
 
 .btn-lg {
-  @apply text-base py-3 px-5;
+  @apply text-lg py-3 px-5;
 }

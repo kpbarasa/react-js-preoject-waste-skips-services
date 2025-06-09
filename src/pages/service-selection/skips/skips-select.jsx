@@ -171,19 +171,19 @@ const SkipSelectComponent = ({ selected, next, prev }) => {
               </div>
             )}
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <button
-                className="btn btn-md btn-secondary"
+                className="btn btn-lg btn-outline-secondary flex justify-center items-center"
                 onClick={() => prev()}
               >
                 <span className="">
                   <TbArrowBigLeft />
                 </span>
-                prev
+                
               </button>
 
-              <button className="btn btn-md btn-primary" onClick={() => next()}>
-                next
+              <button className="btn btn-lg btn-outline-primary flex justify-center items-center" onClick={() => next()}>
+                
                 <span className="">
                   <TbArrowBigRight />
                 </span>
